@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="ukr">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -15,95 +14,143 @@
 </head>
 
 <body>
+    <header class="header">
+      <h2 class="header__name">Igor Kononenko</h2>
+      <h2 class="header__mobile-name">Ігор Кононенко</h2>
+      <nav class="header__navigation">
+        <a class="header__list-link" href="index.html">Головна</a>
+        <a class="header__list-link active" href="about.html">Про Ігоря Кононенка</a>
+        <a class="header__list-link" href="bissnes.html">Бізнес</a>
+        <a class="header__list-link" href="responsibylity.html">Відповідальність</a>
+        <a class="header__list-link" href="press.html">Преса</a>
+      </nav>
+      <a class="mobile__menu-button" id="mobile-menu-btn"><img src="images/Frame.svg" alt="menu"> </a>
 
-        <header class="header">
-            <h2 class="header-name">Igor Kononenko</h2>
-        
-            <nav class="header-navigation">
-                <a class="header-navigation-list-link" href="index.html">Головна</a>
-                <a class="header-navigation-list-link active" href="about.html">Про Ігоря</a>
-                <a class="header-navigation-list-link" href="bissnes.html">Бізнес</a>
-                <a class="header-navigation-list-link" href="responsibylity.html">Відповідальність</a>
-                <a class="header-navigation-list-link" href="press.html">Преса</a>
+      <!-- modal window -->
+      <div class="modal" id="mobile-menu">
+      
+        <div class="modal__mobile">
+          <div class="header-container">
+            <h2 class="header-container-name">Ігор Кононенко</h2>
+            <div class="close-btn" id="close">&times;</div>
+          </div>
+          <div class="mobile-menu">
+            <nav class="mobile-menu__list">
+              <a href="index.html" class="mobile-menu__link">Головна</a>
+              <a href="about.html" class="mobile-menu__link">Про Ігоря Кононенка</a>
+              <a href="bissnes.html" class="mobile-menu__link">Бізнес</a>
+              <a href="responsibylity.html" class="mobile-menu__link">Відповідальність</a>
+              <a href="press.html" class="mobile-menu__link">Преса</a>
             </nav>
-        
-            <a class="mobile-menu-button" href="#"> <b>МЕНЮ</b> </a>
-        
-            <nav class="language">
-                <a href="" class="language-link on">Укр</a>
-                <a href="" class="language-link">En</a>
-            </nav>
-        
-        </header>
+          </div>
+          <footer class="footer">
+            <div class="footer__info">
+              <h3 class="footer__title">Ігор Кононенко</h3>
+              <p class="footer__rights">© 2020 Всі права захищено.</p>
+            </div>
+      
+            <div class="social-media">
+              <a href="https://www.facebook.com/ihorkononenko1" class="social-media__link">
+                <img class="social-media__images" src="images/facebook.svg" alt="facebook">
+              </a>
+              <a href="https://www.linkedin.com/in/ihor-kononenko" class="social-media__link">
+                <img class="social-media__images" src="images/linkedin.svg" alt="linkedin">
+              </a>
+            </div>
+          </footer>
+        </div>
+      </div>
+    
+      <nav class="language">
+        <a href="" class="language-link on">Укр</a>
+        <a href="" class="language-link">En</a>
+      </nav>
+    
+    </header>
 
-        <div class="body-container">
-            <h1 class="body-title-page"> Про ігоря </h1>
-
-            <p class="about-page-info">Ігор Віталійович Кононенко – український бізнесмен, меценат, у минулому політичний діяч, народний депутат VIII скликання
+    <main class="about-page">
+      <div class="about-page__wrap">
+        <h1 class="about-page__title">ПРО ІГОРЯ КОНОНЕНКА</h1>
+        <div class="text">
+          <p class="text__info">Ігор Віталійович Кононенко – український бізнесмен, меценат, у минулому політичний діяч,
+            народний депутат VIII скликання
             Верховної Ради України, перший заступник голови фракції партії «Блок Петра Порошенка» (2014-2019).
-            </p>
-            <p class="about-page-info">Працюючи парламентарем, Ігор Кононенко займався реформою децентралізації. В основу цієї політики закладено положення
+          </p>
+          <p class="text__info">Працюючи парламентарем, Ігор Кононенко займався реформою децентралізації. В основу цієї
+            політики закладено положення
             Європейської хартії місцевого самоврядування та найефективніші світові стандарти суспільних відносин у цій сфері.
             Законодавчі ініціативи Кононенка:
-            </p>
-            <p class="about-page-info"><span>615-VIII</span>  про внесення змін до Закону України «Про житлово-комунальні послуги» щодо належного соціально-економічного
-            захисту учасників антитерористичної операції та членів їхніх сімей (про справедливе призначення та надання субсидій);
-            </p>
-            <p class="about-page-info"><span>834-VIII</span> Закон визначає правові, економічні, організаційні засади проведення державної реєстрації речових та інших прав,
-            які підлягають реєстрації за цим законом, та їхніх обтяжень і спрямований на забезпечення визнання та захисту державою
+          </p>
+          <p class="text__info"><span>615-VIII</span> про внесення змін до Закону України «Про житлово-комунальні послуги»
+            щодо належного соціально-економічного
+            захисту учасників антитерористичної операції та членів їхніх сімей (про справедливе призначення та надання
+            субсидій);
+          </p>
+          <p class="text__info"><span>834-VIII</span> Закон визначає правові, економічні, організаційні засади проведення
+            державної реєстрації речових та інших прав,
+            які підлягають реєстрації за цим законом, та їхніх обтяжень і спрямований на забезпечення визнання та захисту
+            державою
             цих прав, створення умов для функціонування ринку нерухомого майна; </p>
-            <p class="about-page-info"><span>1762-VIII</span> «Про джерела фінансування дорожнього господарства України» щодо вдосконалення механізму фінансування
+          <p class="text__info"><span>1762-VIII</span> «Про джерела фінансування дорожнього господарства України» щодо
+            вдосконалення механізму фінансування
             дорожньої галузі;
-            </p>
-            <p class="about-page-info"><span>1763-VIII</span> про внесення змін до Бюджетного кодексу України щодо удосконалення механізму фінансування дорожньої галузі;
-            </p>
-            <p class="about-page-info"><span>2304-VIII</span> про внесення змін до деяких законодавчих актів України у сфері будівництва та експлуатації автомобільних
+          </p>
+          <p class="text__info"><span>1763-VIII</span> про внесення змін до Бюджетного кодексу України щодо удосконалення
+            механізму фінансування дорожньої галузі;
+          </p>
+          <p class="text__info"><span>2304-VIII</span> про внесення змін до деяких законодавчих актів України у сфері
+            будівництва та експлуатації автомобільних
             доріг;
-            </p>
-            <p class="about-page-info"><span>834-VIII, 1762-VIII, 2304-VIII</span> визначають особливості будівництва та експлуатації автомобільних доріг загального
+          </p>
+          <p class="text__info"><span>834-VIII, 1762-VIII, 2304-VIII</span> визначають особливості будівництва та
+            експлуатації автомобільних доріг загального
             користування державного значення на умовах концесії.
-            Підсилюють забезпечення прав та інтересів концесіонера (інвестора). Створюють прозорі умови у сфері будівництва доріг.
-            </p>            
-            <p class="about-page-info">Серед бізнес-активів Ігоря Кононенка – публічне акціонерне товариство «Закритий корпоративний недиверсифікований
-            інвестиційний фонд «ВІК». Кононенко є акціонером Міжнародного інвестиційного банку та засновником Міжнародної тенісної
+            Підсилюють забезпечення прав та інтересів концесіонера (інвестора). Створюють прозорі умови у сфері будівництва
+            доріг.
+          </p>
+          <p class="text__info">Серед бізнес-активів Ігоря Кононенка – публічне акціонерне товариство «Закритий
+            корпоративний недиверсифікований
+            інвестиційний фонд «ВІК». Кононенко є акціонером Міжнародного інвестиційного банку та засновником Міжнародної
+            тенісної
             академії (м. Київ).
-            </p>
-            <p class="about-page-info">Ігор Кононенко є засновником Благодійної організації «Благодійний Фонд Ігоря Кононенка», яким керує його дружина Лілія
+          </p>
+          <p class="text__info">Ігор Кононенко є засновником Благодійної організації «Благодійний Фонд Ігоря Кононенка»,
+            яким керує його дружина Лілія
             Кононенко.
-            </p>
-
-                                   
-                    <a class="video-link" data-fancybox href="https://youtu.be/ZJv6y89V9-o">
-                        <img class="video-btn" src="images/video-btn.jpg" alt="#" >
-                    </a>
-
-                    <div class="video-text" >
-                        <h3 class="video-title">П’ять днів з Кононенко</h3>
-                        <p class="video-info">Фільм-інтерв’ю про Ігоря Віталійовича</p>
-                    </div>
-           </div>
-
+          </p>
         </div>
-
-
+      </div>
         
-    <div class="footer">
-        <div class="footer-left">
-            <h3 class="footer-title">Ігор Кононенко</h3>
-            <p class="rights">© 2020 Всі права захищено.</p>
+      
+      <div class="video">
+          <a class="video__link" data-fancybox href="https://youtu.be/ZJv6y89V9-o">
+            <img class="video__btn" src="images/video-btn.jpg" alt="#">
+          </a>
+          <div class="video__text">
+            <h3 class="video__title">П’ять днів з Кононенко</h3>
+            <p class="video__about">Фільм-інтерв’ю про Ігоря Віталійовича</p>
         </div>
+      </div>
+
+    </main>
+        
+    <footer class="footer">
+      <div class="footer__info">
+        <h3 class="footer__title">Ігор Кононенко</h3>
+        <p class="footer__rights">© 2020 Всі права захищено.</p>
+      </div>
     
-        <div class="social-media">
-            <a href="#" class="social-media-link">
-                <img class="social-media-link-images" src="images/facebook.svg" alt="facebook">
-            </a>
-            <a href="#" class="social-media-link">
-                <img class="social-media-link-images" src="images/linkedin.svg" alt="linkedin">
-            </a>
-        </div>
-    </div>
+      <div class="social-media">
+        <a href="https://www.facebook.com/ihorkononenko1" class="social-media__link">
+          <img class="social-media__images" src="images/facebook.svg" alt="facebook">
+        </a>
+        <a href="https://www.linkedin.com/in/ihor-kononenko" class="social-media__link">
+          <img class="social-media__images" src="images/linkedin.svg" alt="linkedin">
+        </a>
+      </div>
+    </footer>
 
-
+        <script src="js/modal.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/jquery.fancybox.min.js"></script>
