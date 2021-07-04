@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -14,19 +14,53 @@
 </head>
 <body>
     <header class="header">
-        <h2 class="header-name">Igor Kononenko</h2>
+      <h2 class="header__name">Igor Kononenko</h2>
+      <h2 class="header__mobile-name">Ігор Кононенко</h2>
+      <nav class="header__navigation">
+          <a class="header__list-link active" href="index.html">Головна</a>
+          <a class="header__list-link" href="about.html">Про Ігоря Кононенка</a>
+          <a class="header__list-link" href="bissnes.html">Бізнес</a>
+          <a class="header__list-link" href="responsibylity.html">Відповідальність</a>
+          <a class="header__list-link" href="press.html">Преса</a>
+      </nav>
+      <a class="mobile__menu-button" id="mobile-menu-btn"><img src="images/Frame.svg" alt="menu"></a>
 
-        <h2 class="header-mobile-name">Ігор Кононенко</h2>
+      <!-- modal window -->
+      <div class="modal" id="mobile-menu">
 
-        <nav class="header-navigation">
-            <a class="header-navigation-list-link active" href="index.html">Головна</a>
-            <a class="header-navigation-list-link" href="about.html">Про Ігоря</a>
-            <a class="header-navigation-list-link" href="bissnes.html">Бізнес</a>
-            <a class="header-navigation-list-link" href="responsibylity.html">Відповідальність</a>
-            <a class="header-navigation-list-link" href="press.html">Преса</a>
-        </nav>
+        <div class="modal__mobile">
+          <div class="header-container">
+          <h2 class="header-container-name">Ігор Кононенко</h2>
+          <div class="close-btn" id="close">&times;</div>
+          </div>
 
-        <a class="mobile-menu-button" href="#"><img src="images/Frame.svg" alt="menu"> </a>
+          <div class="mobile-menu" >
+            <nav class="mobile-menu__list">
+              <a href="index.html" class="mobile-menu__link">Головна</a>
+              <a href="about.html" class="mobile-menu__link">Про Ігоря Кононенка</a>
+              <a href="bissnes.html" class="mobile-menu__link">Бізнес</a>
+              <a href="responsibylity.html" class="mobile-menu__link">Відповідальність</a>
+              <a href="press.html" class="mobile-menu__link">Преса</a>
+            </nav>
+          </div>
+
+          <footer class="footer">
+            <div class="footer__info">
+              <h3 class="footer__title">Ігор Кононенко</h3>
+              <p class="footer__rights">© 2020 Всі права захищено.</p>
+            </div>
+          
+            <div class="social-media">
+              <a href="https://www.facebook.com/ihorkononenko1" class="social-media__link">
+                <img class="social-media__images" src="images/facebook.svg" alt="facebook">
+              </a>
+              <a href="https://www.linkedin.com/in/ihor-kononenko" class="social-media__link">
+                <img class="social-media__images" src="images/linkedin.svg" alt="linkedin">
+              </a>
+            </div>
+          </footer>
+        </div>
+      </div>
 
         <nav class="language">
             <a href="" class="language-link on">Укр</a>
@@ -35,45 +69,43 @@
 
     </header>
 
-    <div class="body-container">
-        <div class="info-wrap">
-            <h1 class="body-title">Ігор кононенко</h1>
-            <p class="body-info">Український бізнесмен і філантроп.</p>
-            <img class="body-photo" src="images/kononenko.jpg" alt="photo" >
+    <main class="title-page">
+        <div class="info">
+            <h1 class="info__title">ІГОР <br> КОНОНЕНКО</h1>
+            <p class="info__info">Український бізнесмен і філантроп.</p>
+            <img class="info__photo" src="images/kononenko.jpg" alt="photo" >
         </div>
 
         <div class="about">
-            <h2 class="about-title">Про ігоря</h2>
-            <h2 class="about-title-mobile"><b>Про ігоря 
-            Кононенка</b></h2>
-            <p class="about-info">Ігор Віталійович Кононенко – український бізнесмен, меценат, у минулому політичний діяч, народний депутат VIII скликання
+            <h2 class="about__title">ПРО ІГОРЯ</h2>
+            <h2 class="about__title--mobile"><b>ПРО ІГОРЯ КОНОНЕНКА</b></h2>
+            <p class="about__info">Ігор Віталійович Кононенко – український бізнесмен, меценат, у минулому політичний діяч, народний депутат VIII скликання
             Верховної Ради України, перший заступник голови фракції партії «Блок Петра Порошенка» (2014-2019).</p>
         
-        <a href="about.html" class="about-button">Читати далі</a>
+        <a href="about.html" class="about__button">Читати далі</a>
         </div>
-        </div>
-    </div>
+    </main>
 
-    <div class="footer">
-        <div class="footer-left">
-        <h3 class="footer-title">Ігор Кононенко</h3>
-        <p class="rights">© 2020 Всі права захищено.</p>
+    <footer class="footer">
+        <div class="footer__info">
+        <h3 class="footer__title">Ігор Кононенко</h3>
+        <p class="footer__rights">© 2020 Всі права захищено.</p>
         </div>
 
         <div class="social-media">
-             <a href="#" class="social-media-link">
-                <img class="social-media-link-images" src="images/facebook.svg" alt="facebook">
+             <a href="https://www.facebook.com/ihorkononenko1" class="social-media__link">
+                <img class="social-media__images" src="images/facebook.svg" alt="facebook">
             </a>
-            <a href="#" class="social-media-link">
-                <img class="social-media-link-images" src="images/linkedin.svg" alt="linkedin">
+            <a href="https://www.linkedin.com/in/ihor-kononenko" class="social-media__link">
+                <img class="social-media__images" src="images/linkedin.svg" alt="linkedin">
             </a>
         </div>
-    </div> 
+    </footer> 
 
-
+        <script src="js/modal.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="js/slick.min.js"></script>
         <script src="js/jquery.fancybox.min.js"></script>
         <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,75 +15,116 @@
 
 <body>
     <header class="header">
-        <h2 class="header-name">Igor Kononenko</h2>
+      <h2 class="header__name">Igor Kononenko</h2>
+    
+      <h2 class="header__mobile-name">Ігор Кононенко</h2>
+    
+      <nav class="header__navigation">
+        <a class="header__list-link" href="index.html">Головна</a>
+        <a class="header__list-link" href="about.html">Про Ігоря Кононенка</a>
+        <a class="header__list-link active" href="bissnes.html">Бізнес</a>
+        <a class="header__list-link" href="responsibylity.html">Відповідальність</a>
+        <a class="header__list-link" href="press.html">Преса</a>
+      </nav>
+    
+      <a class="mobile__menu-button" id="mobile-menu-btn"><img src="images/Frame.svg" alt="menu"> </a>
 
-        <nav class="header-navigation">
-            <a class="header-navigation-list-link" href="index.html">Головна</a>
-            <a class="header-navigation-list-link" href="about.html">Про Ігоря</a>
-            <a class="header-navigation-list-link active" href="bissnes.html">Бізнес</a>
-            <a class="header-navigation-list-link" href="responsibylity.html">Відповідальність</a>
-            <a class="header-navigation-list-link" href="press.html">Преса</a>
-        </nav>
+      <!-- modal window -->
+      <div class="modal" id="mobile-menu">
+      
+        <div class="modal__mobile">
+          <div class="header-container">
+            <h2 class="header-container-name">Ігор Кононенко</h2>
+            <div class="close-btn" id="close">&times;</div>
+          </div>
+          <div class="mobile-menu">
+            <nav class="mobile-menu__list">
+              <a href="index.html" class="mobile-menu__link">Головна</a>
+              <a href="about.html" class="mobile-menu__link">Про Ігоря Кононенка</a>
+              <a href="bissnes.html" class="mobile-menu__link">Бізнес</a>
+              <a href="responsibylity.html" class="mobile-menu__link">Відповідальність</a>
+              <a href="press.html" class="mobile-menu__link">Преса</a>
+            </nav>
+          </div>
+          <footer class="footer">
+            <div class="footer__info">
+              <h3 class="footer__title">Ігор Кононенко</h3>
+              <p class="footer__rights">© 2020 Всі права захищено.</p>
+            </div>
+      
+            <div class="social-media">
+              <a href="https://www.facebook.com/ihorkononenko1" class="social-media__link">
+                <img class="social-media__images" src="images/facebook.svg" alt="facebook">
+              </a>
+              <a href="https://www.linkedin.com/in/ihor-kononenko" class="social-media__link">
+                <img class="social-media__images" src="images/linkedin.svg" alt="linkedin">
+              </a>
+            </div>
+          </footer>
+        </div>
+      </div>
 
-        <a class="mobile-menu-button" href="#"> <b>МЕНЮ</b> </a>
-
-        <nav class="language">
-            <a href="" class="language-link on">Укр</a>
-            <a href="" class="language-link">En</a>
-        </nav>
-
+      <nav class="language">
+        <a href="" class="language-link on">Укр</a>
+        <a href="" class="language-link">En</a>
+      </nav>
+    
     </header>
 
-    <div class="body-container">
-        <h1 class="body-title-page">Бізнес</h1>
+    <main class="bissnes">
+      <div class="bissnes__wrap">
+        <h1 class="bissnes__title">Бізнес</h1>
 
-        <p class="bisnes-info">Ігор Кононенко є власником публічного акціонерного товариства «Закритий корпоративний недиверсифікований інвестиційний
+        <p class="bissnes__about-info">Ігор Кононенко є власником публічного акціонерного товариства «Закритий корпоративний недиверсифікований інвестиційний
         фонд «ВІК», в який входять компанії у сфері будівництва, готельного бізнесу, торгівлі та спорту:
         </p>
 
-        <ul class="bisnes-list">
-            <li class="bisnes-list-info"><img class="bisnes-list-images" src="images/Ellipse 4.svg" alt="o" >ТОВ «Спортивно-оздоровчий комплекс «МОНІТОР», <span>Україна</span></li>
-            <li class="bisnes-list-info"><img class="bisnes-list-images" src="images/Ellipse 4.svg" alt="o">ТОВ «Сатурн-транс», Україна</li>
-            <li class="bisnes-list-info"><img class="bisnes-list-images" src="images/Ellipse 4.svg" alt="o">ТОВ «Янтра», Україна</li>
-            <li class="bisnes-list-info"><img class="bisnes-list-images" src="images/Ellipse 4.svg" alt="o">ТОВ «Медсервіс плюс», Україна</li>
-            <li class="bisnes-list-info"><img class="bisnes-list-images" src="images/Ellipse 4.svg" alt="o">ДП «Джепен Моторс», Україна</li>
-            <li class="bisnes-list-info"><img class="bisnes-list-images" src="images/Ellipse 4.svg" alt="o">АТ «Міжнародний Інвестиційний Банк», Україна</li>
-            <li class="bisnes-list-info"><img class="bisnes-list-images" src="images/Ellipse 4.svg" alt="o">Приватна компанія «Трек Холдінг Кост С.Л.», Іспанія</li>
-            <li class="bisnes-list-info"><img class="bisnes-list-images" src="images/Ellipse 4.svg" alt="o">Приватна компанія «Ланкашир Біг С.Л.», Іспанія</li>
-            <li class="bisnes-list-info"><img class="bisnes-list-images" src="images/Ellipse 4.svg" alt="o">ТОВ «Міжнародна Тенісна Академія», Україна</li>
-        </ul>
+        <div class="bissnes__container">
+          <ul class="bissnes__list">
+              <li class="bissnes__list-info"><img class="bissnes__list-images" src="images/Ellipse 4.svg" alt="o"><p class="bissnes__list-text">ТОВ «Спортивно-оздоровчий комплекс «МОНІТОР», Україна</p></li>
+              <li class="bissnes__list-info"><img class="bissnes__list-images" src="images/Ellipse 4.svg" alt="o"><p class="bissnes__list-text">ТОВ «Сатурн-транс», Україна</p></li>
+              <li class="bissnes__list-info"><img class="bissnes__list-images" src="images/Ellipse 4.svg" alt="o"><p class="bissnes__list-text">ТОВ «Янтра», Україна</p></li>
+              <li class="bissnes__list-info"><img class="bissnes__list-images" src="images/Ellipse 4.svg" alt="o"><p class="bissnes__list-text">ТОВ «Медсервіс плюс», Україна</p></li>
+              <li class="bissnes__list-info"><img class="bissnes__list-images" src="images/Ellipse 4.svg" alt="o"><p class="bissnes__list-text">ДП «Джепен Моторс», Україна</p></li>
+              <li class="bissnes__list-info"><img class="bissnes__list-images" src="images/Ellipse 4.svg" alt="o"><p class="bissnes__list-text">АТ «Міжнародний Інвестиційний Банк», Україна</p></li>
+              <li class="bissnes__list-info"><img class="bissnes__list-images" src="images/Ellipse 4.svg" alt="o"><p class="bissnes__list-text">Приватна компанія «Трек Холдінг Кост С.Л.», Іспанія</p></li>
+              <li class="bissnes__list-info"><img class="bissnes__list-images" src="images/Ellipse 4.svg" alt="o"><p class="bissnes__list-text">Приватна компанія «Ланкашир Біг С.Л.», Іспанія</p></li>
+              <li class="bissnes__list-info"><img class="bissnes__list-images" src="images/Ellipse 4.svg" alt="o"><p class="bissnes__list-text">ТОВ «Міжнародна Тенісна Академія», Україна</p></li>
+          </ul>
+        </div>
     
-        <p class="bisnes-info">МТА – це місцева українська база олімпійської та параолімпійської підготовки спортсменів, де регулярно проводять
+        <p class="bissnes__info">МТА – це місцева українська база олімпійської та параолімпійської підготовки спортсменів, де регулярно проводять
         навчально-тренувальні збори спортсмени Федерації тенісу, Національна дефлімпійська збірна команда з волейболу,
         Національна федерація із баскетболу та Національна федерація із футболу.
         </p>
-        <p class="bisnes-info">Протягом року в МТА відбувається понад 300 тенісних спортивних заходів. Сьогодні в МТА навчається 700 юних спортсменів.
+        <p class="bissnes__info">Протягом року в МТА відбувається понад 300 тенісних спортивних заходів. Сьогодні в МТА навчається 700 юних спортсменів.
         МТА фінансує тренування та виїзні турніри юних тенісисток до досягнення ними 18-річного віку.</p>
-        <p class="bisnes-info">У 2017 році МТА підписала контракти з чемпіонками тенісних турнірів у групі юніорів Марією Долженко та Дарією Снігур.
+        <p class="bissnes__info">У 2017 році МТА підписала контракти з чемпіонками тенісних турнірів у групі юніорів Марією Долженко та Дарією Снігур.
         Дарія Снігур у 2019 році здобула для України титул на юніорському Вімблдонському тенісному турнірі у Великій Британії. У
         2021 році Дарія Снігур виграла свій п’ятий одиночний титул на професійних змаганнях ITF у Франції.</p>
+      </div>
     
-        <img class="bisnes-photo" src="images/biznes.jpg" alt="photo" >
-    </div> 
+      <img class="bissnes__photo" src="images/biznes.jpg" alt="photo" >
+    </main> 
     
     
-    <div class="footer">
-        <div class="footer-left">
-            <h3 class="footer-title">Ігор Кононенко</h3>
-            <p class="rights">© 2020 Всі права захищено.</p>
-        </div>
+    <footer class="footer">
+      <div class="footer__info">
+        <h3 class="footer__title">Ігор Кононенко</h3>
+        <p class="footer__rights">© 2020 Всі права захищено.</p>
+      </div>
     
-        <div class="social-media">
-            <a href="#" class="social-media-link">
-                <img class="social-media-link-images" src="images/facebook.svg" alt="facebook">
-            </a>
-            <a href="#" class="social-media-link">
-                <img class="social-media-link-images" src="images/linkedin.svg" alt="linkedin">
-            </a>
-        </div>
-    </div>
+      <div class="social-media">
+        <a href="https://www.facebook.com/ihorkononenko1" class="social-media__link">
+          <img class="social-media__images" src="images/facebook.svg" alt="facebook">
+        </a>
+        <a href="https://www.linkedin.com/in/ihor-kononenko" class="social-media__link">
+          <img class="social-media__images" src="images/linkedin.svg" alt="linkedin">
+        </a>
+      </div>
+    </footer>
 
-
+    <script src="js/modal.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>

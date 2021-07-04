@@ -7,59 +7,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="header">
-        <h2 class="header-name">Igor Kononenko</h2>
+      <h2 class="header__name">Igor Kononenko</h2>
+    
+      <h2 class="header__mobile-name">Ігор Кононенко</h2>
+    
+      <nav class="header__navigation">
+        <a class="header__list-link" href="index.html">Головна</a>
+        <a class="header__list-link" href="about.html">Про Ігоря Кононенка</a>
+        <a class="header__list-link" href="bissnes.html">Бізнес</a>
+        <a class="header__list-link" href="responsibylity.html">Відповідальність</a>
+        <a class="header__list-link active" href="press.html">Преса</a>
+      </nav>
+    
+      <a class="mobile__menu-button" id="mobile-menu-btn"><img src="images/Frame.svg" alt="menu"> </a>
 
-        <nav class="header-navigation">
-            <a class="header-navigation-list-link" href="index.html">Головна</a>
-            <a class="header-navigation-list-link" href="about.html">Про Ігоря</a>
-            <a class="header-navigation-list-link" href="bissnes.html">Бізнес</a>
-            <a class="header-navigation-list-link" href="responsibylity.html">Відповідальність</a>
-            <a class="header-navigation-list-link active" href="press.html">Преса</a>
-        </nav>
-
-        <a class="mobile-menu-button" href="#"> <b>МЕНЮ</b> </a>
-
-        <nav class="language">
-            <a href="" class="language-link on">Укр</a>
-            <a href="" class="language-link">En</a>
-        </nav>
-
+      <!-- modal window -->
+      <div class="modal" id="mobile-menu">
+      
+        <div class="modal__mobile">
+          <div class="header-container">
+            <h2 class="header-container-name">Ігор Кононенко</h2>
+            <div class="close-btn" id="close">&times;</div>
+          </div>
+          <div class="mobile-menu">
+            <nav class="mobile-menu__list">
+              <a href="index.html" class="mobile-menu__link">Головна</a>
+              <a href="about.html" class="mobile-menu__link">Про Ігоря Кононенка</a>
+              <a href="bissnes.html" class="mobile-menu__link">Бізнес</a>
+              <a href="responsibylity.html" class="mobile-menu__link">Відповідальність</a>
+              <a href="press.html" class="mobile-menu__link">Преса</a>
+            </nav>
+          </div>
+          <footer class="footer">
+            <div class="footer__info">
+              <h3 class="footer__title">Ігор Кононенко</h3>
+              <p class="footer__rights">© 2020 Всі права захищено.</p>
+            </div>
+      
+            <div class="social-media">
+              <a href="https://www.facebook.com/ihorkononenko1" class="social-media__link">
+                <img class="social-media__images" src="images/facebook.svg" alt="facebook">
+              </a>
+              <a href="https://www.linkedin.com/in/ihor-kononenko" class="social-media__link">
+                <img class="social-media__images" src="images/linkedin.svg" alt="linkedin">
+              </a>
+            </div>
+          </footer>
+        </div>
+      </div>
+    
+      <nav class="language">
+        <a href="" class="language-link on">Укр</a>
+        <a href="" class="language-link">En</a>
+      </nav>
+    
     </header>
 
-        <div class="body-container">
-            <h1 class="body-title-page">Преса</h1>
-
-
-        
-
-            
+    <main class="press">
+      <h1 class="press__title">Преса</h1>
+      <div class="press__wrap">
+        <div class="press-container">
+          <div class="press-container__block">
+            <img src="images/fund.jpg" alt="photo__fund" class="press-container__photo">
+              <div class="press-container__wrap">
+                <h3 class="press-container__date">7 DEC 2020</h3>
+                <h2 class="press-container__title">Igor Kononenko Charitable Foundation COVID Donation</h2>
+                <p class="press-container__info">Igor Kononenko Charitable Foundation has published a report on its activities for
+                  2020...</p>
+                <a href="https://ukranews.com/en/news/743882-in-2020-igor-kononenko-charitable-foundation-donated-uah-5-7-million-to-help-fight-covid-19" class="press-container__button">Читати далі</a>
+            </div>
+          </div>
         </div>
+
+        <div class="press-container">
+          <div class="press-container__block">
+            <img src="images/fund.jpg" alt="photo__fund" class="press-container__photo">
+            <div class="press-container__wrap">
+              <h3 class="press-container__date">27 JUL 2021</h3>
+              <h2 class="press-container__title">Support Children</h2>
+              <p class="press-container__info">With the support of businessman Igor Kononenko, the center “Me + Family” provides unique assistance to children with
+              special needs</p>
+              <a href="https://ukranews.com/en/news/743882-in-2020-igor-kononenko-charitable-foundation-donated-uah-5-7-million-to-help-fight-covid-19"
+                class="press-container__button">Читати далі</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
    
    
-    <div class="footer">
-        <div class="footer-left">
-            <h3 class="footer-title">Ігор Кононенко</h3>
-            <p class="rights">© 2020 Всі права захищено.</p>
-        </div>
+    <footer class="footer">
+      <div class="footer__info">
+        <h3 class="footer__title">Ігор Кононенко</h3>
+        <p class="footer__rights">© 2020 Всі права захищено.</p>
+      </div>
     
-        <div class="social-media">
-            <a href="#" class="social-media-link">
-                <img class="social-media-link-images" src="images/facebook.svg" alt="facebook">
-            </a>
-            <a href="#" class="social-media-link">
-                <img class="social-media-link-images" src="images/linkedin.svg" alt="linkedin">
-            </a>
-        </div>
-    </div>
-    
+      <div class="social-media">
+        <a href="https://www.facebook.com/ihorkononenko1" class="social-media__link">
+          <img class="social-media__images" src="images/facebook.svg" alt="facebook">
+        </a>
+        <a href="https://www.linkedin.com/in/ihor-kononenko" class="social-media__link">
+          <img class="social-media__images" src="images/linkedin.svg" alt="linkedin">
+        </a>
+      </div>
+    </footer>
+
+    <script src="js/modal.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
